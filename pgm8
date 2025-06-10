@@ -10,3 +10,4 @@
         msg: "Hello, this is a basic setup"
 ansible-playbook -i hosts.ini setup.yml --ask-become-pass
 mvn exec:java -Dexec.mainClass="com.example.App"
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
