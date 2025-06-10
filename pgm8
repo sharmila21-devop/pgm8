@@ -1,0 +1,12 @@
+[local]
+ localhost ansible_connection=local
+
+- name: Basic Server Setup
+  hosts: local
+  become: true  # Optional: if your tasks need root access
+  tasks:
+    - name: Example task
+      debug:
+        msg: "Hello, this is a basic setup"
+ansible-playbook -i hosts.ini setup.yml --ask-become-pass
+mvn exec:java -Dexec.mainClass="com.example.App"
